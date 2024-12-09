@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+   html,
+   body,
+   div,
+   span,
+   applet,
+   object,
+   iframe,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   blockquote,
+   pre,
+   a,
+   abbr,
+   acronym,
+   address,
+   big,
+   cite,
+   code,
+   del,
+   dfn,
+   em,
+   img,
+   ins,
+   kbd,
+   q,
+   s,
+   samp,
+   small,
+   strike,
+   strong,
+   sub,
+   sup,
+   tt,
+   var,
+   b,
+   u,
+   i,
+   center,
+   dl,
+   dt,
+   dd,
+   ol,
+   ul,
+   li,
+   fieldset,
+   form,
+   label,
+   legend,
+   table,
+   caption,
+   tbody,
+   tfoot,
+   thead,
+   tr,
+   th,
+   td,
+   article,
+   aside,
+   canvas,
+   details,
+   embed,
+   figure,
+   figcaption,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   output,
+   ruby,
+   section,
+   summary,
+   time,
+   mark,
+   audio,
+   video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+   }
+   
+   /* HTML5 display-role reset for older browsers */
+   article,
+   aside,
+   details,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   section {
+     display: block;
+   }
+   
+   body {
+     line-height: 1;
+   }
+   
+   ul {
+     list-style: none;
+   }
+   
+   blockquote,
+   q {
+     quotes: none;
+   }
+   
+   blockquote:before,
+   blockquote:after,
+   q:before,
+   q:after {
+     content: "";
+     content: none;
+   }
+   
+   table {
+     border-collapse: collapse;
+     border-spacing: 0;
+   }
+   
+   html {
+     width: 100vw;
+   }
+   
+   body {
+     width: 100vw;
+     background-color: rgba(0, 0, 0, 0.897);
+     box-sizing: border-box;
+     display: flex;
+     justify-content: right;
+     align-items: center;
+     align-items: center;
+     flex-wrap: wrap;
+   }
+   
+   * {
+     box-sizing: border-box;
+     text-align: justify;
+     color: white;
+   }
+   
+   h1,
+   h2,
+   h3,
+   h4,
+   h5 {
+     text-align: center;
+     font-size: 2.4em;
+   }
+   /* <!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --> */
+   .header {
+     background-color: rgba(124, 0, 0, 0.788);
+     width: 100vw;
+     height: 8vw;
+     font-family: 'Playfair Display', serif;
+     font-size: 20px;
+     font-weight: bold;
+     color: rgb(158, 129, 0);
+   }
+   
+   .title {
+     color: rgb(185, 163, 64);
+     margin-top: 10px;
+   }
+   
+   .header__menu {
+     background-color: rgba(124, 0, 0, 0.788);
+     margin-left: 2vw;
+     border-radius: 20vw;
+     border: 1px solid rgb(158, 129, 0);
+     display: flex;
+     cursor: pointer;
+     color: #ffffff;
+     font-family: Arial;
+     font-size: 35px;
+     padding: 1vw 2vw;
+   }
+   
+   .header__menu:hover {
+     background-color: #3b0000;
+   }
+   
+   
+   .header__menu--open {
+     width: 100vw;
+     height: auto;
+     background-color: rgba(0, 0, 0, 0.897);
+     border: 0.7em solid  rgb(138, 116, 21);
+     display: none;
+     z-index: 10;
+     flex-wrap: wrap;
+     position: sticky;
+     top: 15vh;
+     padding: center;
+   
+   }
+   .header__menu--open ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     flex-wrap: wrap;
+     gap: 8vh;
+   }
+   .header__menu--open ul li {
+     border-bottom: 2px solid rgba(124, 0, 0, 0.788);
+   }
+   .header__menu--open ul li button {
+    background-color: rgba(124, 0, 0, 0.788);
+    border-radius: 20vw;
+    margin-bottom: 2vw;
+    border: 1px solid rgb(158, 129, 0);
+    display: flex;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 0.5vw 1vw;
+    }
+   
+
+   
+
+   .header__menu--open ul li button:hover {
+     background: linear-gradient(to bottom, rgba(124, 0, 0, 0.788)100%, rgba(124, 0, 0, 0.788) 100%);
+     background-color: rgba(124, 0, 0, 0.788);
+   }
+ 

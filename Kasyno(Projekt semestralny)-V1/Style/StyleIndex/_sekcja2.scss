@@ -1,0 +1,49 @@
+.sekcja2 {
+  width: 100vw;
+  border: 0.7em solid $accent-color;
+
+  &__content {
+    width: 100%;
+    height: auto;
+    @include flex-center;
+    flex-wrap: wrap-reverse;
+    gap: 50px;
+
+    &--image {
+      padding-right: 20px;
+      width: 500px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &--text {
+      padding: 2em;
+      width: 500px;
+
+      h1 {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+
+.bslot {
+  background-color: rgba(1, 143, 24, 0.986);
+  margin: 1vw 2vw;
+  @include border-radius(20vw);
+  border: 1px solid $accent-color;
+  display: flex;
+  cursor: pointer;
+  color: $text-color;
+  font-family: $font-body;
+  font-size: 35px;
+  padding: 0.5vw 1vw;
+
+  &:hover {
+    background-color: #022b07;
+  }
+}
+
+  

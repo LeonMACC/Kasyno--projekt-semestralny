@@ -1,0 +1,66 @@
+.header {
+  background-color: $primary-color;
+  width: 100vw;
+  height: 8vw;
+  font-family: $font-header;
+  font-size: 20px;
+  font-weight: bold;
+  color: $accent-color;
+
+  &__menu {
+    background-color: $primary-color;
+    margin-left: 2vw;
+    @include border-radius(20vw);
+    border: 1px solid $accent-color;
+    @include flex-center;
+    cursor: pointer;
+    color: $text-color;
+    font-family: $font-body;
+    font-size: 35px;
+    padding: 1vw 2vw;
+
+    &:hover {
+      background-color: #3b0000;
+    }
+
+    &--open {
+      width: 100vw;
+      height: auto;
+      background-color: $secondary-color;
+      border: 0.7em solid $accent-color;
+      display: none;
+      z-index: 10;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 15vh;
+      padding: center;
+
+      ul {
+        @include flex-center;
+        flex-direction: column;
+        gap: 8vh;
+      }
+
+      ul li {
+        border-bottom: 2px solid $primary-color;
+
+        button {
+          background-color: $primary-color;
+          @include border-radius(20vw);
+          margin-bottom: 2vw;
+          border: 1px solid $accent-color;
+          display: flex;
+          cursor: pointer;
+          color: $text-color;
+          font-family: $font-body;
+          font-size: 20px;
+          padding: 0.5vw 1vw;
+
+          &:hover {
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
