@@ -1,0 +1,32 @@
+@import 'scss/_reset';
+@import 'scss/_variables';
+@import 'scss/_mixins';
+@import 'scss/header';
+@import 'scss/_headerOpen';
+@import 'scss/sekcja1';
+@import 'scss/sekcja2';
+@import 'scss/sekcja3';
+@import 'scss/footer';
+@import 'scss/gallery';
+@import 'scss/_calculator';
+@import 'scss/_kosci';
+@import 'scss/_slotm';
+@import 'scss/_ruletka';
+body {
+  width: 100vw;
+  background-color: $secondary-color;
+  box-sizing: border-box;
+  @include flex-center;
+  flex-wrap: wrap;
+
+  * {
+    box-sizing: border-box;
+    text-align: justify;
+    color: $text-color;
+  }
+
+  h1, h2, h3, h4, h5 {
+    text-align: center;
+    font-size: 2.4em;
+  }
+}

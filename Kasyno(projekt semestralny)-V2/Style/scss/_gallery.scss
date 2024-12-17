@@ -1,0 +1,41 @@
+.gallery {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // Responsywny układ
+  gap: 2rem; // Większy odstęp między elementami
+  padding: 2rem; // Dodatkowa przestrzeń wokół galerii
+
+  &__item {
+    display: flex;
+    flex-direction: column; // Obraz i tekst w jednej kolumnie
+    align-items: center;
+    text-align: center; // Wyśrodkowanie tekstu
+    background-color: rgba(255, 255, 255, 0.1); // Transparentne tło
+    border-radius: 12px; // Zaokrąglenie
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); // Subtelny cień
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Animacje dla hover
+    overflow: hidden;
+  }
+
+  &__item:hover {
+    transform: scale(1.05); // Powiększenie na hover
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); // Mocniejszy cień
+  }
+
+  &__image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 12px 12px 0 0; // Zaokrąglenie tylko górnych rogów
+    transition: filter 0.3s ease; // Animacja przyciemnienia
+  }
+
+  &__image:hover {
+    filter: brightness(0.8); // Przyciemnienie obrazu na hover
+  }
+
+  &__text {
+    font-family: 'Playfair Display', serif; // Nowoczesny font
+    font-size: 1.6rem; // Zmniejszona czcionka dla czytelności
+    color: $text-color;
+    padding: 1rem;
+  }
+}

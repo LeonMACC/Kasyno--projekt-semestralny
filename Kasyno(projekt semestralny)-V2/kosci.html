@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino</title>
+    <link rel="icon" type="image/x-icon" href="./Style/Img/log.ico" />
+        <!-- https://sass-lang.com/ -->
+    <link rel="stylesheet" href="Style/main.css">
+    <script src="./Scripts/applicationMenu.Js" defer></script>
+    <script src="./Scripts/kosci.js" defer></script>
+</head>
+<body>
+   <!-- --------------------------------------------------------------------------------- -->
+   <header class="header">
+    <div >
+      <h1 class="title">Casino</h1>
+        <button class="header__menu" id="menu">
+           =
+        </button>
+    </div>
+    </header>
+   <!-- --------------------------------------------------------------------------------- -->
+
+   <header class="header__menu--open" id="menuContainer">
+    <ul>
+      <li>
+        <a href="index.html">Home Page</a>
+      </li>
+      <li><a href="Ruletka.html">Ruletka</a></li>
+      <li><a href="kosci.html">gra w kosci</a></li>
+      <li><a href="slot.html">slot machine</a></li>
+      <li><a href="galeria.html"> Nasi gracze</a></li>
+      <li><a href="kalkulator.html">kalkulator wygranych</a></li>
+      <li>
+        <button class="header__menu--close__list" id="menuClose">
+          Close
+        </button>
+      </li>
+    </ul>
+  </header>
+
+
+  <body>
+
+    <div class="game-container">
+      <div class="dice-container">
+        <div class="dice" id="dice-1">🎲</div>
+        <div class="dice" id="dice-2">🎲</div>
+      </div>
+      <button id="roll-btn">Rzuć Kośćmi!</button>
+      <div id="result"></div>
+  
+    </div>
+  </body>
+
+  <footer class="footer"></footer>
+  </html>

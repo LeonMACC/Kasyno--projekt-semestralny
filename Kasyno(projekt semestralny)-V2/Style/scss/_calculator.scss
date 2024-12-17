@@ -1,0 +1,102 @@
+.calculator-wrapper {
+  width: 50vh;
+  margin: 5em auto;
+  padding: 2em;
+  background-color: $secondary-color; // Ciemne tło kalkulatora
+  border-radius: 12px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculator__display {
+  width: 100%;
+  background-color: $primary-color; 
+  color: black; 
+  font-size: 2rem;
+  font-family: $font-header;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: inset 0px 3px 6px rgb(0, 0, 0);
+  text-align: right; 
+  margin-bottom: 1.5em;
+}
+
+.calculator__buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 1rem; 
+
+  button {
+    background:(  $primary-color 100%);
+    color: $text-color;
+    font-family: $font-body;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: ( $accent-color 100%);
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+      transform: scale(0.95);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .operator {
+    background-color: $accent-color; 
+    color: #fff;
+
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+
+  .equals {
+    grid-column: span 2; 
+    background-color: lighten($primary-color, 10%);
+    color: $text-color;
+
+    &:hover {
+      background-color: lighten($primary-color, 20%);
+    }
+  }
+
+  .clear {
+    background-color: #ff6b6b; 
+    color: #fff;
+
+    &:hover {
+      background-color: darken(#ff6b6b, 10%);
+    }
+  }
+}
+
+input {
+  width: 100%;
+  background-color: #000000;
+  color: $secondary-color;
+  font-size: 1.2rem;
+  padding: 0.8em;
+  border-radius: 8px;
+  border: 2px solid $primary-color;
+  margin-bottom: 1.5em;
+  text-align: right;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+    box-shadow: 0px 0px 10px $accent-color;
+  }
+}

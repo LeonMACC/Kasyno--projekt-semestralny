@@ -1,0 +1,74 @@
+.rouletka-container {
+    background-color: $roullete-color; 
+    width: 100vw; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 2vw;
+  
+    .content-container {
+      display: flex;
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 2vw;
+  
+      .top-container {
+        display: flex; 
+        gap: 3vw; 
+  
+        .number-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 3.5rem;
+          
+          padding: 2vw;
+          width: 20vw; 
+          height: 10vw;
+          border-radius: 1vw;
+          background-color: $secondary-color;
+          color: $text-color;
+          margin-left: 15vw;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          text-align: center;
+          transition: all 0.3s ease;
+  
+          &:hover {
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+
+          }
+        }
+      }
+  
+      .rouletka-button {
+        margin-top: 3vw;
+        background-color: $primary-color;
+        color: $text-color;
+        font-family: $font-header;
+        font-size: 2rem; 
+        padding: 1vw 3vw;
+        border: none;
+        border-radius: 1vw;
+        margin-left: 20vw;
+        cursor: pointer;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+  
+        &:hover {
+          background-color: darken($primary-color, 5%);
+          transform: translateY(-0.5vw);
+        }
+  
+        &:active {
+          background-color: $accent-color;
+          transform: translateY(0.5vw);
+        }
+      }
+    }
+  
+    .rouletka-image {
+      width: 40vw;
+      height: auto;
+    }
+  }
